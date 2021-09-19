@@ -1,0 +1,8 @@
+import random
+tahmin_edilecek_sayılar = random.randint(0, 30)
+kullanıcı_tahmin = int(input("Tahminizi giriniz: "))
+
+while tahmin_edilecek_sayılar==kullanıcı_tahmin:
+    print("Doğru bildiniz.")
+if tahmin_edilecek_sayılar != kullanıcı_tahmin:   
+    print("Tahmininiz yanlıştır.") 
