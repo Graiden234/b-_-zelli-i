@@ -1,0 +1,7 @@
+import random
+atılacak_zar = random.randint(1, 6)
+kullanıcı_tahmin = int(input("Tahminizi giriniz: "))
+while kullanıcı_tahmin==atılacak_zar:
+    print("Zarda çıkan sayıyı doğru bildiniz.")
+if kullanıcı_tahmin!=atılacak_zar:
+    print("Sayıyı ne yazık ki bilemediniz.")    
