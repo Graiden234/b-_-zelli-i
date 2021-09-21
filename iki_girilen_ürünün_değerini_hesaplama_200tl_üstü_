@@ -1,0 +1,13 @@
+# Kullanıcının girdiği iki ürünün toplam fiyatı 200 TL ve altıysa “Ödenecek miktar=…. TL”; 200 TL’yi geçerse
+# 50TL indirim yaparak “Ödenecek miktar, indirimden sonra ….. TL’dir.” çıktılarını veren kodu yazınız.
+ürün1 = int(input("Lütfen ürünün değerini giriniz: "))
+ürün2 = int(input("Lütfen ikinci ürünün değerini giriniz: "))
+ürün_toplam = ürün1 + ürün2
+while True:
+    if ürün_toplam==200 or ürün_toplam<=200:
+        print(f"Ödenecek miktar: {ürün_toplam} Tl'dir.")
+        break
+    else:
+        indirim = 50-ürün_toplam
+        print(f"Ödenecek miktar, indirimden sonra {indirim} TL'dir")
+        break
