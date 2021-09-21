@@ -1,0 +1,10 @@
+yolcu_kg = int(input("Yükünüzü giriniz: "))
+while True:
+    if yolcu_kg==20 or yolcu_kg<=20:
+        print("Maksimum yük değerini geçmiyorsunuz.")
+    else:
+        yolcu_kg2 = yolcu_kg-20
+        yolcu_kg3 = yolcu_kg2*10
+        print(f"Maksimum ağırlığı geçtiniz, ödeyeceğiniz tutar {yolcu_kg3}Tl'dir.")   
+        break
+print("Program kapanıyor.") 
